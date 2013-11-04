@@ -9,13 +9,15 @@ set PATH=C:\%QT_WEEKLY_REV%-source\qt5\gnuwin32\bin;C:\%QT_WEEKLY_REV%-source\qt
 set BUILD_WEBKIT_ARGS=
 
 cd qt5
-@echo ==========================================================
-cd qtbase && qmake && nmake && nmake install && cd ..
-@echo ==========================================================
+rem @echo ==========================================================
+rem cd qtbase && qmake && nmake && nmake install && cd ..
+rem @echo ==========================================================
 
-for %%A in (%QT5_MODULES%) do (
-  cd %%A && qmake && nmake && nmake install && cd ..
-  @echo ==========================================================
-)
-cd ..
+rem for %%A in (%QT5_MODULES%) do (
+rem   cd %%A && qmake && nmake && nmake install && cd ..
+rem   @echo ==========================================================
+rem )
+rem cd ..
 
+
+nmake

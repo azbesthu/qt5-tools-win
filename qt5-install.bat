@@ -23,7 +23,7 @@ git submodule foreach "git reset --hard HEAD"
 git fetch
 git reset --hard %WEEKLY_QT5_HASH%
 
-perl init-repository --mirror git://webkit.inf.u-szeged.hu/ --module-subset=qtbase,qtjsbackend,qtdeclarative,qtxmlpatterns,qtquickcontrols
+perl init-repository --mirror git://webkit.inf.u-szeged.hu/ --module-subset=qtbase,qtxmlpatterns,qtdeclarative,qtquickcontrols,qtscript,qtquick1,qttools,qtx11extras,qtwinextras
 git submodule foreach "git fetch"
 git submodule update --recursive
 @echo ==========================================================
@@ -33,5 +33,5 @@ git submodule status
 
 
 set QTDIR=
-configure -opengl es2 -angle -opensource -confirm-license -nomake examples -nomake tests -qt-zlib -qt-sql-sqlite -release -prefix C:\%QT_WEEKLY_REV%
+configure -opengl es2 -angle -opensource -confirm-license -nomake examples -qt-zlib -qt-sql-sqlite -release -prefix C:\%QT_WEEKLY_REV%
 
