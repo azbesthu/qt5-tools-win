@@ -21,3 +21,4 @@ rem cd ..
 
 
 nmake
+nmake install

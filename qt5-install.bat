@@ -33,5 +33,5 @@ git submodule status
 
 
 set QTDIR=
-configure -opengl es2 -angle -opensource -confirm-license -nomake examples -qt-zlib -qt-sql-sqlite -release -prefix C:\%QT_WEEKLY_REV%
+configure -opengl es2 -angle -opensource -confirm-license -qt-zlib -qt-sql-sqlite -release -prefix C:\%QT_WEEKLY_REV%
 
