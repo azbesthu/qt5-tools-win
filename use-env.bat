@@ -1,6 +1,6 @@
 set CL=/MP
 
-set QT_WEEKLY_REV=Qt5.2.0-qtwe-r2
+set QT_WEEKLY_REV=Qt5.2.0-qtwe
 
 set QTDIR=C:\%QT_WEEKLY_REV%
 set LIB=c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\LIB;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\LIB
